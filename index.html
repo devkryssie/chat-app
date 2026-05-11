@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web2 Advanced</title>
+
+<link rel="stylesheet" href="src/output.css">
+</head>
+
+<body class="bg-[#0b141a] min-h-screen flex items-center justify-center text-white">
+
+  <div class="w-[400px] h-[700px] bg-[#111b21] rounded-xl overflow-hidden shadow-2xl border border-gray-700">
+    
+    <div id="auth" class="p-5 mt-10">
+
+      <h1 class="text-3xl font-bold text-center mb-8 text-blue-500">  my group chat</h1>
+
+
+      <input  type="text"  id="username" placeholder="Username"  class="w-full p-4 rounded bg-[#353e87] outline-none mb-4">
+
+      <input type="password"  id="password" placeholder="Password" class="w-full p-4 rounded bg-[#121c6b] outline-none mb-4">
+
+      <button id="register"  class="w-full bg-[#2375d9] text-black p-4 rounded font-bold mb-3">Register</button> 
+        
+      <button id="login" class="w-full bg-[#71aaf0] p-4 rounded font-bold" >Login </button>
+
+    </div>
+
+
+    
+    <div id="chatSection" class="hidden h-full flex flex-col">
+    
+    <div class="bg-[#202c33] p-4 flex justify-between items-center border-b border-gray-700">
+
+        <div>
+          <h1 class="font-bold text-xl text-blue-500">  Web2 Advanced</h1>
+        </div>
+
+        <button
+          id="logout"
+          class="bg-[#6069b3] px-4 py-2 rounded" >
+          Logout
+        </button>
+      </div>
+
+
+      <div
+        id="chat"
+        class="flex-1 overflow-y-auto p-4 bg-[#0b141a]"
+      >
+      </div>
+
+    
+      <div class="bg-[#202c33] p-3 flex gap-2">
+
+        <input
+          type="text"
+          id="message"
+          placeholder="Type a message"
+          class="flex-1 bg-[#2a3942] p-3 rounded-full outline-none"
+        >
+
+        <button
+          id="send"
+          class="bg-blue-500 text-black px-5 rounded-full font-bold"
+        >
+          Send
+        </button>
+
+      </div>
+
+    </div>
+
+  </div>
+<script src="app.js"></script>
+</body>
+</html>
